@@ -23,7 +23,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'https://localhost/arsip-kkn';
+$config['base_url'] = 'https://arsip-kkn.herokuapp.com/';
 
 /*
 |--------------------------------------------------------------------------
