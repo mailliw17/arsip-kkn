@@ -5,6 +5,11 @@
 
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
+      <div class="container" style="margin-top: 25px;">
+        <center>
+          <h1>Selamat Datang, Bapak/Ibu <?php echo $this->session->userdata('nama'); ?> !</h1>
+        </center>
+      </div>
       <!-- Content Header (Page header) -->
       <section class="content-header">
         <div class="container-fluid">
@@ -17,35 +22,50 @@
         </div><!-- /.container-fluid -->
       </section>
 
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <?php if ($this->session->flashdata('message_hapus')) : ?>
-              <div class="alert alert-success alert-dismissible fade show" role="alert">
-                Data Mahasiswa Berhasil Dihapus !
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-            <?php endif; ?>
-          </div>
+      <!-- <div class="container"> -->
+      <div class="row">
+        <div class="col-12">
+          <?php if ($this->session->flashdata('message_hapus')) : ?>
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+              Data Mahasiswa Berhasil Dihapus !
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          <?php endif; ?>
         </div>
       </div>
+      <!-- </div> -->
 
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <?php if ($this->session->flashdata('message_berhasil')) : ?>
-              <div class="alert alert-success alert-dismissible fade show" role="alert">
-                Mahasiswa Baru Berhasil Didaftarkan ke sistem !
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-            <?php endif; ?>
-          </div>
+      <!-- <div class="container"> -->
+      <div class="row">
+        <div class="col-12">
+          <?php if ($this->session->flashdata('message_berhasil')) : ?>
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+              Mahasiswa Baru Berhasil Didaftarkan ke sistem !
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          <?php endif; ?>
         </div>
       </div>
+      <!-- </div> -->
+
+      <!-- <div class="container"> -->
+      <div class="row">
+        <div class="col-12">
+          <?php if ($this->session->flashdata('message_edit')) : ?>
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+              Data Mahasiswa Berhasil Diperbarui !
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          <?php endif; ?>
+        </div>
+      </div>
+      <!-- </div> -->
 
       <!-- Main content -->
       <section class="content">
