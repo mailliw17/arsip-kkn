@@ -70,11 +70,11 @@
                             <form action="<?= base_url() ?>auth" method="POST">
                                 <div class="form-group first">
                                     <label for="username">Username</label>
-                                    <input type="text" class="form-control" name="username" id="username" autocomplete="off" required autofocus>
+                                    <input type="text" class="form-control" name="username" id="username" autocomplete="off" placeholder="Silahkan masukan username..." required autofocus>
                                 </div>
                                 <div class="form-group last mb-3">
                                     <label for="password">Password</label>
-                                    <input type="password" class="form-control" name="password" id="password" required>
+                                    <input type="password" class="form-control" name="password" id="password" placeholder="*******" required>
                                 </div>
                                 <input type="submit" value="Log In" class="btn btn-block btn-primary">
                             </form>
